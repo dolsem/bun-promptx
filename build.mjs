@@ -12,7 +12,7 @@ const output = await Bun.build({
 
 
 const XGO = path.join(process.env.HOME, 'go/bin/xgo');
-const TARGETS = 'linux/arm64,linux/amd64,darwin/arm64,darwin/amd64';
+const TARGETS = 'linux/arm64,linux/amd64,darwin/arm64,darwin/amd64,windows/arm64,windows/amd64';
 
 if (output.success) {
   console.log('Compiling native binaries...')
